@@ -20,7 +20,9 @@ const Nav = () => {
       </Link>
       
       {/* Desktop Navigation */}
-      <div className=''></div>
+      <div className='sm:flex hidden'>
+        (isUserLoggedIn)
+      </div>
     </nav>
   )
 }
