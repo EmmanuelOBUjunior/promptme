@@ -2,7 +2,8 @@ import "@styles/globals.css"
 
 
 const metadata = {
-    't'
+    'title': 'PromptMe',
+    'Description': 'Discover and share AI Prompts Worldwide'
 }
 
 
