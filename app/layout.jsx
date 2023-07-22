@@ -6,11 +6,17 @@ const metadata = {
     'Description': 'Discover and share AI Prompts Worldwide'
 }
 
-
-
 const RootLayout = () => {
   return (
-    <div>layout</div>
+    <html lang="en">
+        <body>
+            <div className="main">
+                <div className="gradient">
+                    
+                </div>
+            </div>
+        </body>
+    </html>
   )
 }
 
