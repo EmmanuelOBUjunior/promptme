@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <nav className='w-full flex-between pt-3 mb-16'>
     <Image
-    src = 
+    src = 'assets/images/logo.svg'
     />
     </nav>
   )
