@@ -1,10 +1,10 @@
 import "@styles/globals.css"
 
 
-const layout = () => {
+const RootLayout = () => {
   return (
     <div>layout</div>
   )
 }
 
-export default layout
+export default RootLayout
