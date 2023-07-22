@@ -16,6 +16,7 @@ const Nav = () => {
     alt='Prompt Me Logo'
     className='object-contain'
     />
+    <p className='logo_text'>PromptMe</p>
       </Link>
     </nav>
   )
