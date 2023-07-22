@@ -6,7 +6,7 @@ const metadata = {
     'title': 'PromptMe',
     'Description': 'Discover and share AI Prompts Worldwide'
 }
-const RootLayout = ({Children}) => {
+const RootLayout = ({hildren}) => {
   return (
     <html lang="en">
         <body>
@@ -16,7 +16,7 @@ const RootLayout = ({Children}) => {
             </div>
 
             <main className="app">
-                {Children}
+                {children}
             </main>
         </body>
     </html>
