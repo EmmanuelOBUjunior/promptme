@@ -34,6 +34,7 @@ const Nav = () => {
              width={40}
              height={40}
              alt= 'Profile'
+             className='rounded-full'
             />
           </div>
         ):(<> 
