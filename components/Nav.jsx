@@ -7,7 +7,9 @@ import { signIn, signOut, getProviders, useSession} from 'next-auth/react'
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <nav>
+    
+    </nav>
   )
 }
 
