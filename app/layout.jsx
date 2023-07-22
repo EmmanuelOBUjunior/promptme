@@ -1,3 +1,4 @@
+import Nav from "@components/Nav"
 import "@styles/globals.css"
 
 
@@ -15,6 +16,7 @@ const RootLayout = ({children}) => {
             </div>
 
             <main className="app">
+                <Nav/>
                 {children}
             </main>
         </body>
