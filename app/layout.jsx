@@ -1,3 +1,5 @@
+import "@styles/globals.css"
+
 
 const layout = () => {
   return (
