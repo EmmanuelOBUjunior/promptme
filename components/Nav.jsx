@@ -18,6 +18,9 @@ const Nav = () => {
     />
     <p className='logo_text'>PromptMe</p>
       </Link>
+      
+      {/* Desktop Navigation */}
+      <div className=''></div>
     </nav>
   )
 }
