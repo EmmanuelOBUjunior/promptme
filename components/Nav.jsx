@@ -77,7 +77,7 @@ const Nav = () => {
              height={40}
              alt= 'Profile'
              className='rounded-full'
-             onClick={()=>{}}
+             onClick={()=> settoggleDropdown((prev)=> !prev)}
             />
           </div>
         ):(<> </>)}
