@@ -1,5 +1,4 @@
 import "@styles/globals.css"
-import { Children } from "react/cjs/react.production.min"
 
 
 const metadata = {
