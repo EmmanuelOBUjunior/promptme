@@ -27,7 +27,14 @@ const Nav = () => {
           <div className='gap-3 flex md:gap-5'>
             <Link href = '/create-prompt' className = "black_btn">Create Post</Link>
 
-            <button cas></button>
+            <button type="button" className="outline_btn" onClick={signOut}>Sign Out</button>
+
+            <Image 
+             src = 'assets/images/profile.svg'
+             width={40}
+             height={40}
+             alt= 'Profile'
+            />
           </div>
         ):(<> 
         
