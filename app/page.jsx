@@ -2,7 +2,7 @@ import Feed from "@components/Feed"
 
 const Home = () => {
   return (
-    <section className="full-width flex-center flex-col">
+    <section className="w-full flex-center flex-col">
         <h1 className="text-center head_text">PromptMe:
         <br className="max-md:hidden"/>
         <span className="indigo_gradient text center">Empowering Minds, Inspiring Creativity</span>
