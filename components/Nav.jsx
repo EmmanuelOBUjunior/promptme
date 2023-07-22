@@ -14,6 +14,7 @@ const Nav = () => {
     width = {50}
     height={50}
     alt='Prompt Me Logo'
+    className='object-contain'
     />
       </Link>
     </nav>
