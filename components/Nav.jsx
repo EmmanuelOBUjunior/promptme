@@ -68,7 +68,7 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className='flex sm:hidden'>
+      <div className='flex sm:hidden relative'>
         {isUserLoggedIn ?(
           <div>
             <Image 
@@ -86,6 +86,20 @@ const Nav = () => {
                 onClick={() => setToggleDropdown(false)}>
                   My Profile
                 </Link>
+
+                <Link href='/create-prompt'
+                className='dropdown_link'
+                onClick={() => setToggleDropdown(false)}>
+                  Create Post
+                </Link>
+
+                <button
+                type = 'button'
+                className='mt-2 w-full black_btn'
+                onClick={() => {setToggleDropdown(false); signOut()}}
+                >
+                  Sign Out
+                </button>
               </div>
             )}
           </div>
