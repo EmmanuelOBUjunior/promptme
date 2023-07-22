@@ -24,7 +24,9 @@ const Nav = () => {
       {/* Desktop Navigation */}
       <div className='sm:flex hidden'>
         {isUserLoggedIn ? (
-    
+          <div className='gap-3 flex md:gap-5'>
+            <Link href = '/create-prompt' classname = "black_btn"></Link>
+          </div>
         ):(<> 
         
         </>)}
