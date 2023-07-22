@@ -7,7 +7,15 @@ import { signIn, signOut, getProviders, useSession} from 'next-auth/react'
 
 const Nav = () => {
   const isUserLoggedIn = false
-  const [getProviders, setProviders] = useState(null);
+  const [providers, setProviders] = useState(null);
+
+  useEffect(() => {
+  const setProviders = async () => {
+    const response = await getProviders();
+  
+    setProviders(response);
+  }
+}, [])
 
   return (
     <nav className='w-full flex-between pt-3 mb-16'>
