@@ -7,8 +7,10 @@ import { signIn, signOut, getProviders, useSession} from 'next-auth/react'
 
 const Nav = () => {
   return (
-    <nav>
-    
+    <nav className='w-full flex-between pt-3 mb-16'>
+    <Image
+    src = 
+    />
     </nav>
   )
 }
