@@ -9,7 +9,7 @@ const Nav = () => {
   const isUserLoggedIn = true
 
   const [providers, setProviders] = useState(null);
-  const [toggleDropdown, settoggleDropdown] = useState(false)
+  const [toggleDropdown, setToggleDropdown] = useState(false)
 
   useEffect(() => {
   const setProviders = async () => {
@@ -77,21 +77,20 @@ const Nav = () => {
              height={40}
              alt= 'Profile'
              className='rounded-full'
-             onClick={()=> settoggleDropdown((prev)=> !prev)}
+             onClick={()=> setToggleDropdown((prev)=> !prev)}
             />
             {toggleDropdown && (
               <div className='dropdown'>
                 <Link href='/profile'
                 className='dropdown_link'
-                onClick={() => settoggleDropdown(false)}
-                >My Profile
+                onClick={() => setToggleDropdown(false)}>
+                  My Profile
                 </Link>
               </div>
             )}
           </div>
         ):(<> </>)}
       </div>
-
     </nav>
   )
 }
