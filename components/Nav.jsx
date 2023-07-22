@@ -25,7 +25,7 @@ const Nav = () => {
       <div className='sm:flex hidden'>
         {isUserLoggedIn ? (
           <div className='gap-3 flex md:gap-5'>
-            <Link href = '/create-prompt' classname = "black_btn"></Link>
+            <Link href = '/create-prompt' classname = "black_btn">Create Post</Link>
           </div>
         ):(<> 
         
