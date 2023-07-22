@@ -1,12 +1,12 @@
 import "@styles/globals.css"
+import { Children } from "react/cjs/react.production.min"
 
 
 const metadata = {
     'title': 'PromptMe',
     'Description': 'Discover and share AI Prompts Worldwide'
 }
-
-const RootLayout = () => {
+const RootLayout = ({Children}) => {
   return (
     <html lang="en">
         <body>
@@ -16,7 +16,7 @@ const RootLayout = () => {
             </div>
 
             <main className="app">
-
+                {Children}
             </main>
         </body>
     </html>
