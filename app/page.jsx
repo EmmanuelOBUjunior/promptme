@@ -1,3 +1,5 @@
+import Feed from "@components/Feed"
+
 const Home = () => {
   return (
     <section className="full-width flex-center flex-col">
@@ -8,6 +10,8 @@ const Home = () => {
         <p className=" desc text-center">
         PromptMe is a revolutionary app that brings together aspiring writers, content creators, and AI enthusiasts. Discover a vast library of creative AI prompts generated to spark your imagination and unleash your potential.
         </p>
+
+        <Feed/>
     </section>
   )
 }
