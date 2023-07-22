@@ -47,9 +47,17 @@ const Nav = () => {
              className='rounded-full'
             />
           </div>
-        ):(<> 
-        
-        </>)}
+        ):(
+          <>
+          {
+            providers && Object.values(providers).map((provider) =>(
+              <button>
+                Sign In
+              </button>
+            ))
+          }
+          </>
+        )}
       </div>
     </nav>
   )
