@@ -11,11 +11,7 @@ const handler = NextAuth({
         })
     ],
     async session({session}){
-        try {
-            
-        } catch (error) {
-            
-        }
+        
     },
     async signIn(profile){
 
