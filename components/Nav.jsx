@@ -41,7 +41,7 @@ const Nav = () => {
             <button type="button" className="outline_btn" onClick={signOut}>Sign Out</button>
 
             <Image 
-             src = 'assets/images/profile.svg'
+             src = {session?.user.image}
              width={40}
              height={40}
              alt= 'Profile'
