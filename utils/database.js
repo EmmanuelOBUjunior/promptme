@@ -16,7 +16,9 @@ export const connectToDB = async () => {
             useNewURLParser: true,
             useUnifiedTopology: true
         })
+
         isConnected = true;
+        
         console.log("Database is connected")
     }catch(error){
         console.log(error)
