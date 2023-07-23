@@ -12,7 +12,9 @@ const handler = NextAuth({
         })
     ],
     async session({session}){
-        const session
+        const sessionUser = User.findOne({
+            email: session.user.email
+        });
     },
     async signIn(profile){
         try {
