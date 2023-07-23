@@ -9,4 +9,10 @@ export const connectToDB = async () => {
         console.log("Database is already connected")
         return;
     }
+
+    try{
+
+    }catch(error){
+        console.log(error)
+    }
 }
