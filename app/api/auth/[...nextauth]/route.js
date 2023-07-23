@@ -26,37 +26,39 @@ const handler = NextAuth({
         async signIn({ account, profile }) {
             try {
                 
+                if (account.provider === "google") {
+                    return profile.email_verified && profile.email.endsWith("@example.com")
+                  }
+                  return true
+                
             } catch (error) {
                 
             }
-            if (account.provider === "google") {
-              return profile.email_verified && profile.email.endsWith("@example.com")
-            }
-            return true
+            
 
-        async signIn(profile){
-            try {
-                await connectToDB();
+        // async signIn(profile){
+        //     try {
+        //         await connectToDB();
     
-                //Check if the user already exists
-                const userExists = await User.findOne({
-                    email: profile.email
-                });
+        //         //Check if the user already exists
+        //         const userExists = await User.findOne({
+        //             email: profile.email
+        //         });
     
-                //If not, create a new user
-                if(!userExists){
-                    await User.create({
-                        email: profile.email,
-                        username: profile.name.replace(" ", "").toLowerCase(),
-                        image: profile.picture
-                        })
-                }
+        //         //If not, create a new user
+        //         if(!userExists){
+        //             await User.create({
+        //                 email: profile.email,
+        //                 username: profile.name.replace(" ", "").toLowerCase(),
+        //                 image: profile.picture
+        //                 })
+        //         }
     
-                return true;
-            } catch (error) {
-                console.log(error);
-                return false;
-            }
+        //         return true;
+        //     } catch (error) {
+        //         console.log(error);
+        //         return false;
+        //     }
         }
     },
     
