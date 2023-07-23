@@ -6,8 +6,7 @@ import { useState, useEffect } from 'react';
 import { signIn, signOut, getProviders, useSession} from 'next-auth/react'
 
 const Nav = () => {
-  const isUserLoggedIn = true
-
+  const {data:session} = useSession();
   const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false)
 
@@ -35,7 +34,7 @@ const Nav = () => {
       
       {/* Desktop Navigation */}
       <div className='sm:flex hidden'>
-        {isUserLoggedIn ? (
+        {session?.user ? (
           <div className='gap-3 flex md:gap-5'>
             <Link href = '/create-prompt' className = "black_btn">Create Post</Link>
 
