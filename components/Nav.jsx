@@ -68,7 +68,7 @@ const Nav = () => {
 
       {/* Mobile Navigation */}
       <div className='flex sm:hidden relative'>
-        {isUserLoggedIn ?(
+        {session?.user ?(
           <div>
             <Image 
              src = 'assets/images/profile.svg'
