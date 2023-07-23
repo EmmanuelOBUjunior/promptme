@@ -22,6 +22,18 @@ const handler = NextAuth({
     
             return session;
         },
+
+        async signIn({ account, profile }) {
+            try {
+                
+            } catch (error) {
+                
+            }
+            if (account.provider === "google") {
+              return profile.email_verified && profile.email.endsWith("@example.com")
+            }
+            return true
+
         async signIn(profile){
             try {
                 await connectToDB();
