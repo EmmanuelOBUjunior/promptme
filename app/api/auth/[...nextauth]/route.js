@@ -12,7 +12,7 @@ const handler = NextAuth({
         })
     ],
     async session({session}){
-        
+        const session
     },
     async signIn(profile){
         try {
