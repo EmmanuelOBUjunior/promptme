@@ -32,7 +32,7 @@ const handler = NextAuth({
 
         // if not, create a new user and save user in MongoDB
         if (!userExists) {
-          const user = await User.create({
+            await User.create({
             email: profile.email,
             name: profile.name,
             image: profile.picture,
