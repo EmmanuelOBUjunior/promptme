@@ -78,8 +78,8 @@ const Nav = () => {
           <div className='flex'>
             <Image
               src={session?.user.image}
-              width={37}
-              height={37}
+              width={40}
+              height={40}
               className='rounded-full'
               alt='profile'
               onClick={() => setToggleDropdown(!toggleDropdown)}
