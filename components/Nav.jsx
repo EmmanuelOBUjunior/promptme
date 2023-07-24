@@ -13,8 +13,8 @@ const Nav = () => {
 
   useEffect(() => {
     (async () => {
-      const res = await getProviders();
-      setProviders(res);
+      const response = await getProviders();
+      setProviders(response);
     })();
   }, []);
 
