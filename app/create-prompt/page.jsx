@@ -6,7 +6,14 @@ import { useRouter } from "next/router"
 import Form from "@components/Form"
 
 const CreatePost = () => {
-    const [submitting, setsubmitting] = useState(false)
+    const [submitting, setSubmitting] = useState(false)
+    const [post, setPost] = useState({
+        post: "",
+        tag: "",
+    })
+    const createPost = async (e) =>{
+
+    }
 
   return (
     <Form/>
