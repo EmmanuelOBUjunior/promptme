@@ -18,6 +18,8 @@ const CreatePost = () => {
   return (
     <Form
     type= "Create"
+    post={post}
+    setPost={setPost}
     />
   )
 }
