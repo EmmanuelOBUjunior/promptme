@@ -14,6 +14,9 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
           Your AI Prompt
         </span>
       </label>
+      <textarea value = {post.prompt}>
+
+      </textarea>
       </form>
     </section>
   )
