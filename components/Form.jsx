@@ -6,7 +6,7 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
       <h1 className='head_text text-left'>
         <span className="blue_gradient">{type} Post</span>
       </h1>
-      <p className='desc text-left max-w-md'></p>
+      <p className='desc text-left max-w-md'>Unleash creativity and explore limitless possibilities with by {type}ing and sharing your masterpieces with a thrving community of creators. Inspiring prompts tailored to your interests.</p>
     </section>
   )
 }
