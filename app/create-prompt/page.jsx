@@ -8,7 +8,7 @@ import Form from "@components/Form"
 const CreatePost = () => {
     const [submitting, setSubmitting] = useState(false)
     const [post, setPost] = useState({
-        post: "",
+        prompt: "",
         tag: "",
     })
     const createPost = async (e) =>{
@@ -20,6 +20,7 @@ const CreatePost = () => {
     type= "Create"
     post={post}
     setPost={setPost}
+    postHandler={createPost}
     />
   )
 }
