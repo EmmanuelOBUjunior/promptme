@@ -8,7 +8,7 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
       </h1>
       <p className='desc text-left max-w-md'>Unleash creativity and explore limitless possibilities with by creating and sharing your masterpieces with a thriving community of creators. Inspiring prompts tailored to your interests.</p>
 
-      <form className = "mt-10 glassmorphism w-full max-w-2xl flex-col" action="">
+      <form className = "mt-10 glassmorphism w-full max-w-2xl flex-col gap-7 flex" action="">
 
 
       </form>
