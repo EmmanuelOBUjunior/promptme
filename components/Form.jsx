@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Form = () => {
+const Form = ({type}) => {
   return (
     <div>Form</div>
   )
