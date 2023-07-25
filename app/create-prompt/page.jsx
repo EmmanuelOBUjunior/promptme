@@ -20,7 +20,7 @@ const CreatePost = () => {
     type= "Create"
     post={post}
     setPost={setPost}
-    postHandler={createPost}
+    handleSubmit={createPost}
     />
   )
 }
