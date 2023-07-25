@@ -16,7 +16,9 @@ const CreatePost = () => {
     }
 
   return (
-    <Form/>
+    <Form
+    type= "Create"
+    />
   )
 }
 
