@@ -10,7 +10,9 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
 
       <form className = "mt-10 glassmorphism w-full max-w-2xl flex-col gap-7 flex" onSubmit={hanldesubmit}>
       <label>
-
+        <span className="font-satoshi font-semibold text-base text-gray-700">
+          Your AI Prompt
+        </span>
       </label>
       </form>
     </section>
