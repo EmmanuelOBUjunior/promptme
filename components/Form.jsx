@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Form = ({type}) => {
+const Form = ({type,post,}) => {
   return (
     <div>Form</div>
   )
