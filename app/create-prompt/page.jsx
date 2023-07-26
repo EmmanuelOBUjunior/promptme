@@ -18,10 +18,11 @@ const CreatePost = () => {
         try{
             const response = await fetch('api/prompt/new',{
                 method: 'POST',
-                body: JSON.stringify(
+                body: JSON.stringify({
                     prompt: post.prompt,
-                    
-                )
+                    userId
+                    tag: post.tag
+                })
             })
         }catch(error){
             console.log(error)
