@@ -13,6 +13,7 @@ const CreatePost = () => {
     })
     const createPost = async (e) =>{
         e.preventDefault()
+        setSubmitting(true)
     }
 
   return (
