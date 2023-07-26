@@ -12,7 +12,7 @@ const CreatePost = () => {
         tag: "",
     })
     const createPost = async (e) =>{
-
+        e.preventDefault()
     }
 
   return (
