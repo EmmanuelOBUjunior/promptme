@@ -20,7 +20,7 @@ const CreatePost = () => {
                 method: 'POST',
                 body: JSON.stringify({
                     prompt: post.prompt,
-                    userId: sessionStorage.user.id,
+                    userId: session?.user.id,
                     tag: post.tag
                 })
             })
