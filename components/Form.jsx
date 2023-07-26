@@ -25,7 +25,8 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
         <span className="font-satoshi font-semibold text-base text-gray-700">
          Tag {` `}
         </span>
-      
+        <span className="font_normal">(|
+        #idea, #product, #development)</span>
       <textarea 
       value = {post.prompt} 
       onChange={ (e) => setPost({...post, prompt: e.target.value})}
