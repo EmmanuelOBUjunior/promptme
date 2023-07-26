@@ -39,7 +39,7 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
 
         <button
         type = 'submit'
-        className='px-5 py-1.5'
+        className='px-5 py-1.5 text-sm'
         >
           {}
         </button>
