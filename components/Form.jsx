@@ -23,7 +23,7 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
       </label>
       <label>
         <span className="font-satoshi font-semibold text-base text-gray-700">
-         Tag
+         Tag {` `}
         </span>
       
       <textarea 
