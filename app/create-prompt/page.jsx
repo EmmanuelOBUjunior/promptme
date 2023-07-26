@@ -14,6 +14,12 @@ const CreatePost = () => {
     const createPost = async (e) =>{
         e.preventDefault()
         setSubmitting(true)
+
+        try{
+
+        }catch(error){
+            console.log(error)
+        }
     }
 
   return (
