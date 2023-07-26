@@ -21,6 +21,18 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
       className='form_textarea'
       />
       </label>
+      <label>
+        <span className="font-satoshi font-semibold text-base text-gray-700">
+          Your AI Prompt
+        </span>
+      
+      <textarea 
+      value = {post.prompt} 
+      onChange={ (e) => setPost({...post, prompt: e.target.value})}
+      placeholder='Write your AI Prompt here...'
+      className='form_textarea'
+      />
+      </label>
       </form>
     </section>
   )
