@@ -29,6 +29,8 @@ const CreatePost = () => {
             }
         }catch(error){
             console.log(error)
+        }finally{
+            setSubmitting(false)
         }
     }
 
