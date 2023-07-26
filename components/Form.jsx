@@ -16,7 +16,7 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
       
       <textarea 
       value = {post.prompt} 
-      onChange={ (e) => setPost({...post, prompt: e.target.value})}
+      onChange={ (e) => setPost({...post, tag: e.target.value})}
       placeholder='Write your AI Prompt here...'
       className='form_textarea'
       />
