@@ -39,7 +39,7 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
 
         <button
         type = 'submit'
-        className='px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white'
+        className='px-5 py-1.5 text-sm bg-indigo-900 rounded-full text-white'
         >
           {submitting ? `${type}...`: type}
         </button>
