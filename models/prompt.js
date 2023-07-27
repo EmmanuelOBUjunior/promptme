@@ -1,4 +1,4 @@
-import {Schema, models, model} from "@models/prompt"
+import {Schema, models, model} from "mongoose"
 
 const PromptSchema = new Schema({
     author : {
