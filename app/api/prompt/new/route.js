@@ -10,6 +10,7 @@ export const POST = async (req) =>{
             author: userId,
             tag
         })
+        await newPrompt.save()
 
     }catch(error){
         console.log(error)
