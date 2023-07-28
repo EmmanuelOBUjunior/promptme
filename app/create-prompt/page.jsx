@@ -7,7 +7,7 @@ import Form from "@components/Form"
 
 const CreatePost = () => {
     const router = useRouter();
-    
+    const {data: session} = useSession()
     const [submitting, setSubmitting] = useState(false)
     const [post, setPost] = useState({
         prompt: "",
