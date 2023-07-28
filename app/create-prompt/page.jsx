@@ -6,6 +6,8 @@ import { useRouter } from "next/router"
 import Form from "@components/Form"
 
 const CreatePost = () => {
+    const router = useRouter();
+    
     const [submitting, setSubmitting] = useState(false)
     const [post, setPost] = useState({
         prompt: "",
