@@ -2,12 +2,12 @@
 
 import { useSession } from "next-auth/react"
 import { useState } from "react"
-import { useRouter, usePathname } from "next/navigation"
+import { useRouter, usePathname } from "next/router"
 import Form from "@components/Form"
 
 const CreatePrompt = () => {
     const router = useRouter();
-    const homePath = usePathname()
+    // const homePath = usePathname()
 
     const {data: session} = useSession()
     const [submitting, setSubmitting] = useState(false)
@@ -29,7 +29,7 @@ const CreatePrompt = () => {
                 })
             })
             if(response.ok){
-                router.push(homePath)
+                router.push('/')
             }
         }catch(error){
             console.log(error)
