@@ -2,7 +2,7 @@
 
 import { useSession } from "next-auth/react"
 import { useState } from "react"
-import { useRouter, usePathname } from "next/router"
+import { useRouter} from "next/navigation"
 import Form from "@components/Form"
 
 const CreatePrompt = () => {
@@ -29,7 +29,8 @@ const CreatePrompt = () => {
                 })
             })
             if(response.ok){
-                router.push('/')
+                console.log("Prompt sent to database successfully")
+                // router.push('/')
             }
         }catch(error){
             console.log(error)
