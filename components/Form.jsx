@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
+const Form = ({type, post, submitting, hanldeSubmit, setPost}) => {
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className='head_text text-left'>
@@ -9,7 +9,7 @@ const Form = ({type, post, submitting, hanldesubmit, setPost}) => {
       </h1>
       <p className='desc text-left max-w-md'>Unleash creativity and explore limitless possibilities with by creating and sharing your masterpieces with a thriving community of creators. Inspiring prompts tailored to your interests.</p>
 
-      <form className = "mt-10 glassmorphism w-full max-w-2xl flex-col gap-7 flex" onSubmit={hanldesubmit}>
+      <form className = "mt-10 glassmorphism w-full max-w-2xl flex-col gap-7 flex" onSubmit={hanldeSubmit}>
       <label>
         <span className="font-satoshi font-semibold text-base text-gray-700">
           Your AI Prompt
