@@ -32,6 +32,7 @@ const CreatePrompt = () => {
                 console.log("Prompt sent to database successfully")
                 // router.push('/')
             }
+            console.log("Prompt not sent to database successfully");
         }catch(error){
             console.log(error)
         }finally{
