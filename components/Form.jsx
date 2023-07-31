@@ -39,6 +39,7 @@ const Form = ({type, post, submitting, hanldeSubmit, setPost}) => {
 
         <button
         type = 'submit'
+        disabled = {submitting}
         className='px-5 py-1.5 text-sm bg-indigo-900 rounded-full text-white hover:bg-indigo-950'
         >
           {submitting ? `${type}...`: type}
