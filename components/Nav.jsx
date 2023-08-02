@@ -106,6 +106,7 @@ const Nav = () => {
                   onClick={() => {
                     setToggleDropdown(false);
                     signOut();
+                    router.push('/')
                   }}
                   className='mt-5 w-full black_btn'
                 >
