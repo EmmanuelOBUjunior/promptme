@@ -12,7 +12,11 @@ export const POST = async (req) =>{
             tag
         })
 
-        await newPrompt.save()
+        // await newPrompt.save()
+
+        console.log({
+            creator, prompt,tag
+        })
         return new Response(JSON.stringify(newPrompt), {status : 201})
 
     }catch(error){
