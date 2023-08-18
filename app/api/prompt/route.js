@@ -3,5 +3,9 @@ import Prompt from "@models/prompt";
 
 
 export const GET = async (req) =>{
-    
+    try {
+        
+    } catch (error) {
+        
+    }
 }
