@@ -23,6 +23,13 @@ const Feed = () => {
 
   }
 
+  useEffect(()=>{
+    const fetchPost = async () =>{
+      const response = await fetch('/api/prompt')
+
+    }
+  })
+
   return (
     <section className='feed'>
       <form className='relative w-full flex-center'>
