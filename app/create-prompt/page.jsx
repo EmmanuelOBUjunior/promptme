@@ -18,6 +18,7 @@ const CreatePrompt = () => {
     const createPrompt = async (e) =>{
         e.preventDefault()
         setSubmitting(true)
+        alert('Roll Number should be at least 3 digits long.')
 
         try{
             const response = await fetch('/api/prompt/new',{
