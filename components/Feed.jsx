@@ -6,19 +6,20 @@ import {useState, useEffect} from 'react'
 import PromptCard from './PromptCard'
 
 
-const PromptCardList = ({data, handleTagClick}) =>{
-  return(
+const PromptCardList = ({ data, handleTagClick }) => {
+  return (
     <div className='mt-16 prompt_layout'>
-      {data.map((post)=>{
+      {data.map((post) => (
         <PromptCard
-        key = {post.id}
-        post={post}
-        handleTagClick = {handleTagClick}
+          key={post._id}
+          post={post}
+          handleTagClick={handleTagClick}
         />
-      })}
+      ))}
     </div>
-  )
-}
+  );
+};
+
 
 
 const Feed = () => {
