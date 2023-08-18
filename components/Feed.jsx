@@ -18,7 +18,7 @@ const PromptCardList = () =>{
 
 const Feed = () => {
   const [searchText, setSearchText] = useState("")
-
+  
   const handleSearchChange = (e) => {
 
   }
