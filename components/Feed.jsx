@@ -2,7 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 
 const Feed = () => {
-  u
+  const [searchText, setSearchText] = useState("")
 
   return (
     <section className='feed'>
