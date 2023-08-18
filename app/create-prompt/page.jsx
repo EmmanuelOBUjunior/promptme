@@ -16,7 +16,7 @@ const CreatePrompt = () => {
     })
 
     const createPrompt = async (e) =>{
-        // e.preventDefault()
+        e.preventDefault()
         setSubmitting(true)
 
         try{
