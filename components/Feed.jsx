@@ -4,6 +4,15 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 
 import PostCard from './PostCard'
+import { disconnect } from 'mongoose'
+
+
+const PromptCardList = () =>{
+  return(
+    di
+  )
+}
+
 
 const Feed = () => {
   const [searchText, setSearchText] = useState("")
@@ -23,6 +32,11 @@ const Feed = () => {
         placeholder='Search for a tag or username or author'
         />
       </form>
+
+      <PromptCardList
+      data ={[]}
+      handleTagClick = {() => {}}
+      />
     </section>
   )
 }
