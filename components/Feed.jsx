@@ -9,7 +9,9 @@ import { disconnect } from 'mongoose'
 
 const PromptCardList = () =>{
   return(
-    <div></div>
+    <div className='mt-16 prompt_layout'>
+
+    </div>
   )
 }
 
