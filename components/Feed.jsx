@@ -3,6 +3,8 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 
+import PostCard from './PostCard'
+
 const Feed = () => {
   const [searchText, setSearchText] = useState("")
 
