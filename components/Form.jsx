@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Form = ({type, post, submitting, hanldeSubmit, setPost}) => {
+const Form = ({type, post, submitting, handleSubmit, setPost}) => {
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className='head_text text-left'>
@@ -9,7 +9,7 @@ const Form = ({type, post, submitting, hanldeSubmit, setPost}) => {
       <p className='desc text-left max-w-md'>Unleash creativity and explore limitless possibilities with by creating and sharing your masterpieces with a thriving community of creators. Inspiring prompts tailored to your interests.</p>
 
       <form 
-      onSubmit={hanldeSubmit}
+      onSubmit={handleSubmit}
       className = "mt-10 glassmorphism w-full max-w-2xl flex-col gap-7 flex" 
       >
       <label>
