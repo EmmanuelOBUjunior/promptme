@@ -6,4 +6,4 @@ const PromptCard = () => {
   )
 }
 
-export default PostCard
+export default PromptCard
