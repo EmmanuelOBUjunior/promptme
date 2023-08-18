@@ -3,7 +3,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 
-import PostCard from './PostCard'
+import PromptCard from './PromptCard'
 
 
 const PromptCardList = ({data, handleTagClick}) =>{
