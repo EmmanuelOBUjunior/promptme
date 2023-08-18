@@ -1,6 +1,9 @@
 import React from 'react'
+import {useState} from 'react'
 
 const Feed = () => {
+  u
+
   return (
     <section className='feed'>
       <form className='relative w-full flex-center'>
