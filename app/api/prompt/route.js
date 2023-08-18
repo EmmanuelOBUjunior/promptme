@@ -5,6 +5,7 @@ import Prompt from "@models/prompt";
 export const GET = async (req) =>{
     try {
         await connectToDB()
+        const prompts = await Prompt.find({}).populate('creatior')
     } catch (error) {
         
     }
