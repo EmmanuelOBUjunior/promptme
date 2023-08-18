@@ -9,7 +9,7 @@ import { disconnect } from 'mongoose'
 
 const PromptCardList = () =>{
   return(
-    di
+    <div></div>
   )
 }
 
