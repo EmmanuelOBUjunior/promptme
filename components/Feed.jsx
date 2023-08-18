@@ -10,7 +10,13 @@ import { disconnect } from 'mongoose'
 const PromptCardList = ({data, handleTagClick}) =>{
   return(
     <div className='mt-16 prompt_layout'>
-
+      {data.map((post)=>{
+        <PostCard
+        key = {post.id}
+        post={post}
+        handleTagClick = {handleTagClick}
+        />
+      })}
     </div>
   )
 }
