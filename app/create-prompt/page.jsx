@@ -34,7 +34,7 @@ const CreatePrompt = () => {
             }
         }catch(error){
             alert('Error')
-            // console.log(error)
+            console.log(error)
         }finally{
             setSubmitting(false)
         }
