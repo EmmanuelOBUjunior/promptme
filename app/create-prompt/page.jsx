@@ -30,8 +30,7 @@ const CreatePrompt = () => {
                 })
             })
             if(response.ok){
-                alert('Roll Number should be at least 3 digits long.')
-                // router.push("/")
+                router.push("/")
             }
         }catch(error){
             alert('Error')
