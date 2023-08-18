@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 const Feed = () => {
   const [searchText, setSearchText] = useState("")
