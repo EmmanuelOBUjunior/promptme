@@ -7,7 +7,7 @@ import PostCard from './PostCard'
 import { disconnect } from 'mongoose'
 
 
-const PromptCardList = () =>{
+const PromptCardList = ({data, handleTagClick}) =>{
   return(
     <div className='mt-16 prompt_layout'>
 
@@ -18,7 +18,7 @@ const PromptCardList = () =>{
 
 const Feed = () => {
   const [searchText, setSearchText] = useState("")
-  const [post, setPost] = useState([])
+  const [posts, setPost] = useState([])
   const handleSearchChange = (e) => {
 
   }
