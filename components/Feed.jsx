@@ -8,6 +8,10 @@ import PostCard from './PostCard'
 const Feed = () => {
   const [searchText, setSearchText] = useState("")
 
+  const handleSearchChange = (e) => {
+
+  }
+
   return (
     <section className='feed'>
       <form className='relative w-full flex-center'>
