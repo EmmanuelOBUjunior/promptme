@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import Image from 'next/image'
 
-const PromptCard = () => {
+const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   return (
     <div>PromptCard</div>
   )
