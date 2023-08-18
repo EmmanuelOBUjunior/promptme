@@ -2,7 +2,15 @@ import React from 'react'
 
 const Feed = () => {
   return (
-    <div>Feed</div>
+    <section className='feed'>
+      <form className='relative w-full flex-center'>
+        <input 
+        type="text"
+        className=''
+        placeholder='Search for a tag or username or author'
+        />
+      </form>
+    </section>
   )
 }
 
