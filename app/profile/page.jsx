@@ -7,7 +7,10 @@ import Profile from '@components/Profile'
 
 const Profile = () => {
   return (
-    <Profile/>
+    <Profile
+    name='Mine'
+    desc ='Welcome to your personalized profile.'
+    />
   )
 }
 
