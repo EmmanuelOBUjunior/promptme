@@ -40,7 +40,7 @@ const UpdatePrompt = () => {
 
   return (
     <Form
-    type= "Create"
+    type= "Update"
     post={post}
     setPost={setPost}
     submitting={submitting}
