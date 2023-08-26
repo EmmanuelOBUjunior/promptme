@@ -19,7 +19,7 @@ export const GET = async(req, {params}) => {
 
 //PATCH(update)
 export const PATCH = (req, {params}) => {
-    
+   cosnt {prompt, tag}  = await req.json()
 }
 
 
