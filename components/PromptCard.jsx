@@ -6,7 +6,7 @@ import { useSession } from 'next-auth/react'
 import Image from 'next/image'
 
 const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
-  const [copied, setCopied]
+  const [copied, setCopied] = useState('')
 
 
   return (
