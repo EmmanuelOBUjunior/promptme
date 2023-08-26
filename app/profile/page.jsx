@@ -30,7 +30,7 @@ const MyProfile = () => {
 
   return (
     <Profile
-        name="Mine"
+        name="My"
         desc ="Welcome to your personalized profile."
         handleDelete = {handleDelete}
         handleEdit = {handleEdit}
