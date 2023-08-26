@@ -7,7 +7,10 @@ import Image from 'next/image'
 
 const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   const [copied, setCopied] = useState('')
-
+ 
+  const handleCopy = () => {
+    setCopied()
+  }
 
   return (
     <div className="prompt_card">
@@ -30,7 +33,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
          </div>
         </div>
       <div className="copy_btn"
-      onClick={()=>{}}
+      onClick={()=>{handleCopy}}
       >
         <Image
         src={copied === post.prompt ? "assets/icons/tick.svg" : "assets/icons/copy.svg"}
