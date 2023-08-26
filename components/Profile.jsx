@@ -1,6 +1,6 @@
 const Profile = (name, handleDelete, desc, data, handleEdit) => {
   return (
-    <div>Gad Damnit</div>
+    <div></div>
   )
 }
 
