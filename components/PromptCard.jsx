@@ -29,7 +29,6 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
           </p>
          </div>
         </div>
-      </div>
       <div className="copy_btn"
       onClick={()=>{}}
       >
@@ -38,6 +37,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
         width={12}
         height={12}
         />
+      </div>
       </div>
     </div>
   )
