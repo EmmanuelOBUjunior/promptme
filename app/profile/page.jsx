@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useState, useEffect } from 'react'
+import {useRouter, usePathname} from 'react/navigation'
 import { useSession } from 'next-auth/react'
 
 import Profile from '@components/Profile'
