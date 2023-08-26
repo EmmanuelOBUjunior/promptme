@@ -6,7 +6,8 @@ import { useSession } from 'next-auth/react'
 import Profile from '@components/Profile'
 
 const MyProfile = () => {
-    const []
+    const {data: session} = useSession()
+    const [post, setPost] = useState([])
 
     useEffect(() => {
         const fetchPosts = async() =>{
