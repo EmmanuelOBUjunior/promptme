@@ -12,11 +12,17 @@ const UpdatePrompt = () => {
     useEffect(() => {
         const getPromptDetails = async() => {
             const response =  await fetch(`api/prompt/${promptId}`)
+
+            const data = JSON.stringify(response)
+
+            setPost({
+                prompt: data.prompt,
+                tag: data.tag
+            })
     
     }
-
-
-    }, [paramsId])
+    if(promptId) getPromptDetails()
+    }, [promptId])
 
     const [submitting, setSubmitting] = useState(false)
     const [post, setPost] = useState({
