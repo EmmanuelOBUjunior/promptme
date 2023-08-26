@@ -34,7 +34,7 @@ export const PATCH = async (req, {params}) => {
 
         return new Response(JSON.stringify(existingPrompt), {status: 200})
    } catch (error) {
-    
+        return new Response("Failed to Update Prompt", {status:500})
    }
 }
 
