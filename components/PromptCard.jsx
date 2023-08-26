@@ -42,7 +42,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
       <p className='my-4 font-satoshi text-sm text-gray-700'>
         {post.prompt}
       </p>
-      <p className='font-inter text-sm green_gradient cursor-pointer'>
+      <p className='font-inter text-sm indigo_gradient cursor-pointer'>
         {post.tag}
       </p>
     </div>
