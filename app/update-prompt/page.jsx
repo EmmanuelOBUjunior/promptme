@@ -21,6 +21,7 @@ const UpdatePrompt = () => {
                 tag: data.tag
             })
     
+            console.log(data)
     }
     if(promptId) getPromptDetails()
     }, [promptId])
