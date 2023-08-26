@@ -2,7 +2,9 @@ import PromptCard from "./PromptCard"
 
 const Profile = (name, handleDelete, desc, data, handleEdit) => {
   return (
-    <section></section>
+    <section className="w-full">
+
+    </section>
   )
 }
 
