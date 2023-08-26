@@ -7,7 +7,8 @@ import Image from 'next/image'
 
 const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   const [copied, setCopied] = useState('')
- 
+  const {data:session} = useSession()
+
   const handleCopy = () => {
     setCopied(post.prompt)
     navigator.clipboard.writeText(post.prompt)
@@ -50,6 +51,9 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
       <p className='font-inter text-sm indigo_gradient cursor-pointer' onClick={()=> handleTagClick && handleTagClick(post.tag)}>
         {post.tag}
       </p>
+
+      {session?.user.id === post.creator.id && pathName === './profile'}
+
     </div>
   )
 }
