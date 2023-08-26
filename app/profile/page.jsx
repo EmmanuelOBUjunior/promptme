@@ -9,7 +9,7 @@ const MyProfile = () => {
 
     useEffect(() => {
         const fetchPosts = async() =>{
-
+            const responce = await fetch(`/api/users/${session?.user.id}/posts`)
         }
     })
 
