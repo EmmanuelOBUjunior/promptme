@@ -11,14 +11,14 @@ const MyProfile = () => {
     }
 
     const handleDelete = async () => {
-        
+
     }
 
   return (
     <Profile
     name='Mine'
     desc ='Welcome to your personalized profile.'
-    handleDelete = {}
+    handleDelete = {handleDelete} />
     handleEdit = {handleEdit}
     data = {[]}
     />
