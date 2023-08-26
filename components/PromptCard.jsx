@@ -11,7 +11,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   const handleCopy = () => {
     setCopied(post.prompt)
     navigator.clipboard.writeText(post.prompt)
-    setTimeout()
+    setTimeout(() => setCopied(""), 3000)
   }
 
   return (
