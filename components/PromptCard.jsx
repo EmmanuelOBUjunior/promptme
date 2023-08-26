@@ -20,7 +20,6 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
           height={40}
           className='rounded-full object-contain'
           />
-        </div>
          <div>
           <h3 className='font-satoshi font-semibold text-gray-900'>
             {post.creator.name}
@@ -29,6 +28,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
             {post.creator.email}
           </p>
          </div>
+        </div>
       </div>
       <div className="copy_btn"
       onClick={()=>{}}
