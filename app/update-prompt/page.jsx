@@ -12,7 +12,7 @@ const UpdatePrompt = () => {
     useEffect(() => {
         const getPromptDetails = async() => {
             
-            const response =  await fetch(`api/prompt/${promptId}`)
+            const response =  await fetch(`api/prompt/?id=${promptId}`)
 
             const data = JSON.stringify(response)
 
