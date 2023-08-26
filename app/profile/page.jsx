@@ -16,6 +16,8 @@ const MyProfile = () => {
 
             setPost(data)
         }
+
+        if(session?.user.id) fetchPosts();
     })
 
     const handleEdit = () => {
