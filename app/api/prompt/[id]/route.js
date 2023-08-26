@@ -24,7 +24,8 @@ export const PATCH = async (req, {params}) => {
    try {
         await connectToDB()
         const existingPrompt = await Prompt.findById(params.id)
-        
+
+        if(!existingPrompt) return new Response("Prompt Not Found", {status: 404})
    } catch (error) {
     
    }
