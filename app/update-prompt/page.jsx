@@ -1,6 +1,5 @@
 'use client'
 
-import { useSession } from "next-auth/react"
 import { useState, useEffect } from "react"
 import { useRouter, useSearchParams} from "next/navigation"
 import Form from "@components/Form"
