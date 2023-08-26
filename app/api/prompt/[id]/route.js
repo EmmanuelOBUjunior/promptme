@@ -47,6 +47,6 @@ export const DELETE = async (req, {params}) => {
 
         return new Response("Prompt deleted", {status:200})
     } catch (error) {
-        
+        return new Response("Failed to Delete Prompt", {status:400})
     }
 }
