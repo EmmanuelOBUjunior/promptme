@@ -6,10 +6,14 @@ import { useSession } from 'next-auth/react'
 import Profile from '@components/Profile'
 
 const MyProfile = () => {
+    const []
 
     useEffect(() => {
         const fetchPosts = async() =>{
-            const responce = await fetch(`/api/users/${session?.user.id}/posts`)
+            const response = await fetch(`/api/users/${session?.user.id}/posts`)
+            const data = await response.json()
+
+
         }
     })
 
