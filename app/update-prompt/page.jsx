@@ -8,6 +8,9 @@ import Form from "@components/Form"
 const UpdatePrompt = () => {
     const router = useRouter();
 
+
+    useEffect(() => {}, [paramsId])
+
     const {data: session} = useSession()
     const [submitting, setSubmitting] = useState(false)
     const [post, setPost] = useState({
