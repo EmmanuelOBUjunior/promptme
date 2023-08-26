@@ -1,4 +1,4 @@
-const Profile = (name, handleDelete, desc, data,) => {
+const Profile = (name, handleDelete, desc, data, handleEdit) => {
   return (
     <div>Profile</div>
   )
