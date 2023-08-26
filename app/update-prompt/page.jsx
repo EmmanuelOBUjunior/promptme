@@ -6,7 +6,8 @@ import Form from "@components/Form"
 
 const UpdatePrompt = () => {
     const router = useRouter();
-
+    const searchParams = useSearchParams();
+    const paramsId = searchParams.get('id');
 
     useEffect(() => {}, [paramsId])
 
