@@ -15,7 +15,7 @@ const MyProfile = () => {
     name='Mine'
     desc ='Welcome to your personalized profile.'
     handleDelete = {}
-    handleEdit = {hande}
+    handleEdit = {handleEdit}
     data = {[]}
     />
   )
