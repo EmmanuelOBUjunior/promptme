@@ -18,6 +18,10 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
           className='rounded-full object-contain'
           />
         </div>
+         <div>
+          <h3>{post.creator.username}</h3>
+          <p>{post.creator.email}</p>
+         </div>
       </div>
     </div>
   )
