@@ -8,6 +8,10 @@ const Profile = ({name, handleDelete, desc, data, handleEdit}) => {
       <span className="amber_gradient">{name} Profile</span>
       </h1>
       <p className="desc text-left">{desc}</p>
+
+      <div className="mt-10 prompt_layout">
+        
+      </div>
     </section>
   )
 }
