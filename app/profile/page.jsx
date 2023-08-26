@@ -5,7 +5,9 @@ import { useSession } from 'next-auth/react'
 
 import Profile from '@components/Profile'
 
-const Profile = () => {
+const MyProfile = () => {
+    const han
+
   return (
     <Profile
     name='Mine'
@@ -17,4 +19,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default MyProfile
