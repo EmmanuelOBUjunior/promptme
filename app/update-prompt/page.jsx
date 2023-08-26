@@ -7,7 +7,7 @@ import Form from "@components/Form"
 const UpdatePrompt = () => {
     const router = useRouter();
     const searchParams = useSearchParams();
-    const paramsId = searchParams.get('id');
+    const promptId = searchParams.get('id');
 
     useEffect(() => {
         const getPromptDetails = async() => {
