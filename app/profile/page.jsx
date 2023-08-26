@@ -10,6 +10,9 @@ const Profile = () => {
     <Profile
     name='Mine'
     desc ='Welcome to your personalized profile.'
+    handleDelete = {}
+    handleEdit = {}
+    data = {[]}
     />
   )
 }
