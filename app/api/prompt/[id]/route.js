@@ -8,7 +8,7 @@ export const GET = async(req) => {
         const prompts = await Prompt.find({}).populate('creator')
         
 
-        return New Response(JSON.stringify(prompts), {status: 200})
+        return new Response(JSON.stringify(prompts), {status: 200})
     } catch (error) {
         
     }
