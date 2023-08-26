@@ -3,7 +3,9 @@
 import { useSession } from "next-auth/react"
 import { useState } from "react"
 import { useRouter} from "next/navigation"
-import Form from "@components/Form = () => {
+import Form from "@components/Form"
+
+const UpdatePrompt = () => {
     const router = useRouter();
 
     const {data: session} = useSession()
@@ -47,4 +49,4 @@ import Form from "@components/Form = () => {
   )
 }
 
-export default UpdatePrompt
+export default CreatePrompUpdate
