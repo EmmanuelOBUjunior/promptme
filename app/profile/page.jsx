@@ -7,7 +7,7 @@ import Profile from '@components/Profile'
 
 const MyProfile = () => {
     const handleEdit = () => {
-        
+
     }
 
   return (
@@ -15,7 +15,7 @@ const MyProfile = () => {
     name='Mine'
     desc ='Welcome to your personalized profile.'
     handleDelete = {}
-    handleEdit = {}
+    handleEdit = {hande}
     data = {[]}
     />
   )
