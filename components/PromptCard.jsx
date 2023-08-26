@@ -19,8 +19,12 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
           />
         </div>
          <div>
-          <h3>{post.creator.username}</h3>
-          <p>{post.creator.email}</p>
+          <h3 className=''>
+            {post.creator.name}
+          </h3>
+          <p>
+            {post.creator.email}
+          </p>
          </div>
       </div>
     </div>
