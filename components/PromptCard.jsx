@@ -27,7 +27,11 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
           </p>
          </div>
       </div>
-      <div className="copy_btn"></div>
+      <div className="copy_btn"
+      onClick={()=>{}}
+      >
+
+      </div>
     </div>
   )
 }
