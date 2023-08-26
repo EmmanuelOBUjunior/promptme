@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   return (
-    <div>PromptCard</div>
+    <div className="prompt_car"></div>
   )
 }
 
