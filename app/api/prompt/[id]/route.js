@@ -18,7 +18,9 @@ export const GET = async(req, {params}) => {
 
 
 //PATCH(update)
-
+export const PATCH = (req, {params}) => {
+    
+}
 
 
 //DELETE(remove/delete)
