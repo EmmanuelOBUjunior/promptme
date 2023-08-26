@@ -15,6 +15,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
           alt='user_image'
           width={40}
           height={40}
+          className='rounded-full object-contain'
           />
         </div>
       </div>
