@@ -9,9 +9,15 @@ const UpdatePrompt = () => {
     const searchParams = useSearchParams();
     const paramsId = searchParams.get('id');
 
-    useEffect(() => {}, [paramsId])
+    useEffect(() => {
+        const getPromptDetails = async() => {
+            const response =  await fetch(`api/prompt/${promptId}`)
+    
+    }
 
-    const {data: session} = useSession()
+
+    }, [paramsId])
+
     const [submitting, setSubmitting] = useState(false)
     const [post, setPost] = useState({
         prompt: "",
