@@ -28,6 +28,7 @@ const UpdatePrompt = () => {
     
     }
     if(promptId) getPromptDetails()
+    
     }, [promptId])
 
     const createPrompt = async (e) =>{
