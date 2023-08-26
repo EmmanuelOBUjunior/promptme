@@ -19,7 +19,7 @@ const UpdatePrompt = () => {
             
             const response =  await fetch(`api/prompt/${promptId}`)
 
-            const data = JSON.stringify(response)
+            const data = await response.json()
 
             setPost({
                 prompt: data.prompt,
@@ -28,7 +28,7 @@ const UpdatePrompt = () => {
     
     }
     if(promptId) getPromptDetails()
-    
+
     }, [promptId])
 
     const createPrompt = async (e) =>{
