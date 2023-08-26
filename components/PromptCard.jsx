@@ -9,7 +9,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   const [copied, setCopied] = useState('')
  
   const handleCopy = () => {
-    setCopied()
+    setCopied(post.prompt)
   }
 
   return (
