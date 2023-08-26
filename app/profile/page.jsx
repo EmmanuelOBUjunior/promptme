@@ -6,6 +6,13 @@ import { useSession } from 'next-auth/react'
 import Profile from '@components/Profile'
 
 const MyProfile = () => {
+
+    useEffect(() => {
+        const fetchPosts = async() =>{
+
+        }
+    })
+
     const handleEdit = () => {
 
     }
