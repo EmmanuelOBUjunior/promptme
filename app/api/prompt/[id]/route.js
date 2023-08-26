@@ -40,3 +40,10 @@ export const PATCH = async (req, {params}) => {
 
 
 //DELETE(remove/delete)
+export const DELETE = async (req, {params}) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+}
