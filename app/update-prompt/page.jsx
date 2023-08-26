@@ -49,4 +49,4 @@ const UpdatePrompt = () => {
   )
 }
 
-export default CreatePrompUpdate
+export default UpdatePrompt
