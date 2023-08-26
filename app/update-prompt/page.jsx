@@ -6,13 +6,18 @@ import Form from "@components/Form"
 
 const UpdatePrompt = () => {
     const router = useRouter();
+    const [submitting, setSubmitting] = useState(false)
+    const [post, setPost] = useState({
+        prompt: "",
+        tag: "",
+    })
     const searchParams = useSearchParams();
     const promptId = searchParams.get('id');
 
     useEffect(() => {
         const getPromptDetails = async() => {
             
-            const response =  await fetch(`api/prompt/?id=${promptId}`)
+            const response =  await fetch(`api/prompt/${promptId}`)
 
             const data = JSON.stringify(response)
 
@@ -21,16 +26,9 @@ const UpdatePrompt = () => {
                 tag: data.tag
             })
     
-           
     }
     if(promptId) getPromptDetails()
     }, [promptId])
-
-    const [submitting, setSubmitting] = useState(false)
-    const [post, setPost] = useState({
-        prompt: "",
-        tag: "",
-    })
 
     const createPrompt = async (e) =>{
         e.preventDefault()
