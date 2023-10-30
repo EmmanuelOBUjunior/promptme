@@ -35,7 +35,7 @@ const MyProfile = () => {
         try {
           
         } catch (error) {
-          cons
+          console.log(error)
         }
       }
     }
