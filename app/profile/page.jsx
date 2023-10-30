@@ -38,6 +38,7 @@ const MyProfile = () => {
           })
           
           const filteredPost = myPosts.filter(p => p.id !== post._id)
+          setPosts(filteredPost)
 
         } catch (error) {
           console.log(error)
