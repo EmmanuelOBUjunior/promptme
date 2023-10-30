@@ -29,7 +29,15 @@ const MyProfile = () => {
     }
 
     const handleDelete = async () => {
+      const hasConfirmed = confirm("Are you sure you want to delete this post?")
 
+      if(hasConfirmed){
+        try {
+          
+        } catch (error) {
+          cons
+        }
+      }
     }
 
   return (
