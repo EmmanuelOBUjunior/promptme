@@ -33,11 +33,11 @@ const MyProfile = () => {
 
       if(hasConfirmed){
         try {
-          await fetch(`api/prompt/${post._id}`.toString(), {
+          await fetch(`api/prompt/${posts._id}`.toString(), {
             method: 'DELETE'
           })
           
-          const filteredPost = myPosts.filter(p => p.id !== post._id)
+          const filteredPost = posts.filter(p => p.id !== post._id)
           setPosts(filteredPost)
 
         } catch (error) {
