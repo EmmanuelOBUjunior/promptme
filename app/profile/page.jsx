@@ -37,6 +37,8 @@ const MyProfile = () => {
             method: 'DELETE'
           })
           
+          const filteredPost = myPosts.filter(p => p.id !== post._id)
+
         } catch (error) {
           console.log(error)
         }
