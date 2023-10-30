@@ -60,7 +60,7 @@ const UpdatePrompt = () => {
     post={post}
     setPost={setPost}
     submitting={submitting}
-    handleSubmit={createPrompt}
+    handleSubmit={()=>{}}
     />
   )
 }
