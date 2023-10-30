@@ -35,6 +35,8 @@ const UpdatePrompt = () => {
         e.preventDefault()
         setSubmitting(true)
 
+        if(!promptId) alert("Prompt not found!!!!")
+
         try{
             const response = await fetch('/api/prompt/new',{
                 method: 'POST',
