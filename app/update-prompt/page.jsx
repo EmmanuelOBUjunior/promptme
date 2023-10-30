@@ -31,7 +31,7 @@ const UpdatePrompt = () => {
 
     }, [promptId])
 
-    const createPrompt = async (e) =>{
+    const updatePrompt = async (e) =>{
         e.preventDefault()
         setSubmitting(true)
 
@@ -60,7 +60,7 @@ const UpdatePrompt = () => {
     post={post}
     setPost={setPost}
     submitting={submitting}
-    handleSubmit={()=>{}}
+    handleSubmit={updatePrompt}
     />
   )
 }
