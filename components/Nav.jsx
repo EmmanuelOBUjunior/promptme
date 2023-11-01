@@ -14,10 +14,14 @@ const Nav = () => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
   useEffect(() => {
-    (async () => {
+    const setUpProviders = async () => {
       const response = await getProviders();
       setProviders(response);
-    })();
+    }
+    
+
+    
+    
   }, []);
 
   return (
