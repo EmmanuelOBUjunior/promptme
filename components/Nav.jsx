@@ -44,7 +44,7 @@ const Nav = () => {
               Create Post
             </Link>
 
-            <button type='button' onClick={()=>{signOut; router.push('/')}} className='outline_btn'>
+            <button type='button' onClick={()=>{signOut(); router.push('/')}} className='outline_btn'>
               Sign Out
             </button>
 
