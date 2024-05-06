@@ -11,7 +11,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   const pathName = usePathname()
 
   console.log("Session", session?.user.id)
-  console.log("Creator", post.creator._id);
+  console.log("Creator", post.creator.name);
 
   const handleCopy = () => {
     setCopied(post.prompt)
