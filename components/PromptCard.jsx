@@ -10,6 +10,9 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   const {data:session} = useSession()
   const pathName = usePathname()
 
+  console.log("Session", session?.user.id)
+  console.log("Creator", post.creator._id);
+
   const handleCopy = () => {
     setCopied(post.prompt)
     navigator.clipboard.writeText(post.prompt)
